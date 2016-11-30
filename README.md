@@ -1,4 +1,4 @@
-# rug-cli-executor
+# Atomist 'rug-cli-logging'
 
 Extension for the Rug CLI to enable logging to `~/.atomist/cli.log`
 
