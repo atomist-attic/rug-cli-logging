@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.atomist</groupId>
 	<artifactId>rug-cli-logging</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.2.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>rug-cli-logging</name>
 	<description>Extension for the Rug CLI to enable debug logging</description>
@@ -22,7 +24,7 @@
 			<dependency>
 				<groupId>com.atomist</groupId>
 				<artifactId>atomist-bom</artifactId>
-				<version>0.2.0</version>
+				<version>0.4.0</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -119,25 +121,12 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		<repository>
-			<id>atomist-release</id>
-			<name>Atomist Release</name>
-			<url>https://sforzando.artifactoryonline.com/sforzando/libs-release</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
 	</repositories>
 	<distributionManagement>
 		<repository>
-			<id>atomist-release</id>
+			<id>public-atomist-release</id>
 			<name>Atomist Release</name>
-			<url>https://sforzando.artifactoryonline.com/sforzando/libs-release-local</url>
+			<url>https://atomist.jfrog.io/atomist/libs-release-local</url>
 		</repository>
-		<snapshotRepository>
-			<id>atomist-snapshots</id>
-			<name>Atomist Snapshots</name>
-			<url>https://sforzando.artifactoryonline.com/sforzando/libs-snapshot-local</url>
-		</snapshotRepository>
 	</distributionManagement>
 </project>

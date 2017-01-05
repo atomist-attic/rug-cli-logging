@@ -33,8 +33,8 @@
 	<logger name="com.atomist.project" level="debug" additivity="false">
 		<appender-ref ref="FILE" />
 	</logger>
-
-	<root level="debug">
+	
+	<root level="info">
 		<appender-ref ref="FILE" />
 	</root>
 
